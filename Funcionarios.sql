@@ -1,0 +1,21 @@
+﻿CREATE TABLE Sheet1(Column_1 VARCHAR(10));
+INSERT INTO Sheet1 (Column_1) VALUES 
+('1. Criação da tabela funcionarios'),
+('CREATE TABLE funcionarios ('),
+('    id INT PRIMARY KEY,'),
+('    nome VARCHAR(100) NOT NULL,'),
+('    cargo VARCHAR(50) NOT NULL,'),
+('    nacionalidade VARCHAR(50) NOT NULL,'),
+('    cpf VARCHAR(14) NOT NULL, -- formato: 000.000.000-00'),
+('    salario NUMERIC(12,2) NOT NULL -- valores com 2 casas decimais'),
+(');'),
+('2. Inserção de funcionário'),
+('INSERT INTO funcionarios VALUES (213, 'Fulano', 'Padeiro', 'BR', '000.000.000-01', '3475.25');'),
+('3. Listagem completa dos funcionários ordenados por id'),
+('SELECT * FROM funcionarios ORDER BY id;'),
+('4. Atualizar funcionario'),
+('UPDATE funcionarios SET cpf = '000.000.000-02' WHERE id = 213;'),
+('5.Consulta para verificar existência do funcionário pelo id'),
+('SELECT salario FROM funcionarios WHERE id = 212;'),
+('6. Deletar Funcionario'),
+('DELETE FROM funcionarios WHERE id = 213;');
